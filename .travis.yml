@@ -1,8 +1,10 @@
 language: python
 python:
-  - "2.7"
+- '2.7'
 install:
-  -
+- 
 script:
-  - python test.py
-  
+- python test.py
+env:
+  global:
+    secure: fUvNeNzIJ6sBoy85PkJ8y3NzPY6CFjEW1l7hAHOnWHfYC+1oCTLp1mBDTGWsxTK02rMntPziqE6uXYxneoDin2ieUqBu+CO3ztB4vLkGHJUoFx7cYlE7VkzgJamwrvvv9R1ircmehfhnztPNeDBlpKKR0yadSPDBqEJw9qTX2k+c8POk65lrLHpehc4FivsTc4KzihEJlFbWD9uGOusXcVhcUOn5KUVoLP4e7A1Dn38HX0mVdGD4B1FH7GpdUb1nroNz1Ia8fY2l43MN94FaQoc2p5AfWKQIoIueQzcNdC06G/OrqOWM1vkUSUv3Lg277v6V22ayHgnojYIVCDdd6ybjWrIsBoWIhZ3YifL8b8ooInCq9D3grsYZrixp5z6Xcm8An3Hu6nem6lPqb4pt33/MWMXlPGcfWHtlh2J66pawVg6qXJciLWKvPp2w20Eb+mQPpcXYVbeJJFVOSxWwPfSOLLSVwfYtGx96b50ZSOQ7XXTjKjecVmc0yulKBlDCWnenf84MWJHlKkf47EInm7Eb/2VjcqMy7WaFf0HcnV3l0ALCEBfMn0cgpC0x+ubpKvpLtpJf7OIFDVFMwtG/Pb3bx5uOLveT9DbtmE1qLIIuCTq06awBtjbe5hL2ru6iwyaY17Uphsqn8/hTUmMQf2hzC+hrWClnTqwv1ZHCAvA=
