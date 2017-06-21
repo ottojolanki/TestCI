@@ -2,7 +2,7 @@ language: python
 python:
 - '2.7'
 install:
--pip install dxpy
+- pip install dxpy
 env:
   global:
 #DX_LOGIN_TOKEN
