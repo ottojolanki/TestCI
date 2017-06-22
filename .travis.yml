@@ -22,6 +22,6 @@ script:
 #- python testsimpleapp.py 
 after_success:
 - docker login quay.io -u="$QUAY_LOGIN" -p="$QUAY_PASSWORD"
-- docker push quay.io/ottojolanki/hellodocker
+- docker push hellodocker quay.io/ottojolanki/hellodocker
 
 
