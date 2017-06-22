@@ -20,4 +20,6 @@ script:
 - ./test.sh
 after_success:
 - docker login quay.io -u="$QUAY_LOGIN" -p="$QUAY_PASSWORD"
+- docker commit `docker ps -l | awk '{print $1}' | tail -n 1` quay.io/ottojolanki/hellodocker
+- docker push quay.io/ottojolanki/hellodocker
 - docker push hellodocker quay.io/ottojolanki/hellodocker
