@@ -14,7 +14,7 @@ env:
 
 script:
 #- dx login --token $DX_LOGIN_TOKEN --noprojects; dx select project-F4Kv2280g45x6ZyFFj8FJgxZ
-- docker build -t hellodocker Hellodocker/
+- cd Hellodocker;docker build -t hellodocker .;cd ..
 - python testuselessfunctions.py
 - ./test.sh
 #- python testsimpleapp.py 
