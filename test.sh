@@ -1,6 +1,6 @@
 #!/bin/bash
 HELLO=$(docker run hellodocker)
-HW="HelloWorld"
+HW="HelloWorl"
 if [ "$HELLO" == "$HW" ]; then
 	exit 0
 else
