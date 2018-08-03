@@ -1,2 +1,2 @@
-print "HelloWorl  blarbrals"
+print("HelloWorl  blarbrals")
 
