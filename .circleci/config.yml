@@ -47,7 +47,8 @@ jobs:
           command: |
             . venv/bin/activate
             python HelloDocker/hello.py
-
+            docker build -t hellodocker:latest -f HelloDocker/Dockerfile .
+            docker run hellodocker:latest
       #- store_artifacts:
       #    path: test-reports
       #    destination: test-reports
