@@ -12,7 +12,7 @@ task echo {
     String say_what
 
     command {
-        python /echo.py ${say_what}
+        python /echoz.py ${say_what}
     }
     output {
         String what_said = read_lines(stdout())[0]
@@ -20,5 +20,4 @@ task echo {
     runtime {
         docker: "quay.io/ottojolanki/echo:latest"
     }
-
 }
