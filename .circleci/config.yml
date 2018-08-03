@@ -43,10 +43,10 @@ jobs:
       # https://pytest.org
       # https://nose.readthedocs.io
       - run:
-          name: run hello
+          name: run echo
           command: |
-            docker build -t hellodocker:latest -f HelloDocker/Dockerfile .
-            docker run hellodocker:latest
+            docker build -t echo:latest -f HelloDocker/Dockerfile .
+            docker run echo:latest asdasdasddf
       #- store_artifacts:
       #    path: test-reports
       #    destination: test-reports

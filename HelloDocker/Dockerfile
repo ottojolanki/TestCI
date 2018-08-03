@@ -1,5 +1,5 @@
 FROM python:3.5
 
-ADD hello.py /
+ADD echo.py /
 
-CMD [ "python", "./hello.py"]
+ENTRYPOINT [ "python", "echo.py"]
