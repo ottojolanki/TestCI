@@ -30,7 +30,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            wget -N -c https://github.com/broadinstitute/cromwell/releases/download/32/cromwell-32.jar
+            wget -N -c https://github.com/broadinstitute/cromwell/releases/download/34/cromwell-34.jar
 
       #- save_cache:
       #    paths:
