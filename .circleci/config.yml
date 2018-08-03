@@ -46,7 +46,7 @@ jobs:
           name: run hello
           command: |
             . venv/bin/activate
-            python HelloDocker/hello.py
+            python hello.py
             docker build -t hellodocker:latest -f HelloDocker/Dockerfile .
             docker run hellodocker:latest
       #- store_artifacts:
