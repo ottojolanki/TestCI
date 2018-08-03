@@ -8,7 +8,7 @@ jobs:
     docker:
       # specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
-      - image: circleci/python:3.6.1
+      - image: circleci/openjdk:8
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -30,7 +30,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            python3 -m venv venv
+            wget -N -c https://github.com/broadinstitute/cromwell/releases/download/32/cromwell-32.jar
 
       #- save_cache:
       #    paths:
@@ -45,8 +45,6 @@ jobs:
       - run:
           name: run hello
           command: |
-            . venv/bin/activate
-            python hello.py
             docker build -t hellodocker:latest -f HelloDocker/Dockerfile .
             docker run hellodocker:latest
       #- store_artifacts:
