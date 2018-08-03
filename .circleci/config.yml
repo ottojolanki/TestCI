@@ -45,8 +45,7 @@ jobs:
       - run:
           name: run echo
           command: |
-            docker build -t echo:latest -f HelloDocker/Dockerfile .
-            docker run echo:latest asdasdasddf
+            java -jar ./cromwell-34.jar run echo_wf.wdl -i echo_input.json
       #- store_artifacts:
       #    path: test-reports
       #    destination: test-reports
