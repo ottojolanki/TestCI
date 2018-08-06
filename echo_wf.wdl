@@ -12,7 +12,9 @@ task echo {
     String say_what
 
     command {
-        python /echoz.py ${say_what}
+        ls -l
+        pwd
+        python /echo.py ${say_what}
     }
     output {
         String what_said = read_lines(stdout())[0]
