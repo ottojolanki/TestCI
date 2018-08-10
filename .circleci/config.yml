@@ -26,10 +26,10 @@ jobs:
       #    # fallback to using the latest cache if no exact match is found
       #    - v1-dependencies-
 
-      - run:
-          name: install dependencies
-          command: |
-            wget -N -c https://github.com/broadinstitute/cromwell/releases/download/34/cromwell-34.jar
+      #- run:
+      #    name: install dependencies
+      #    command: |
+      #      wget -N -c https://github.com/broadinstitute/cromwell/releases/download/34/cromwell-34.jar
 
       #- save_cache:
       #    paths:
@@ -44,7 +44,8 @@ jobs:
       - run:
           name: run echo
           command: |
-            java -jar ./cromwell-34.jar run echo_wf.wdl -i echo_input.json
+            python --version
+            python3 --version
       #- store_artifacts:
       #    path: test-reports
       #    destination: test-reports
