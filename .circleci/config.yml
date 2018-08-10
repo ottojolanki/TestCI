@@ -26,10 +26,10 @@ jobs:
       #    # fallback to using the latest cache if no exact match is found
       #    - v1-dependencies-
 
-      - run:
-          name: install dependencies
-          command: |
-            alias python="python3.4"
+      #- run:
+      #    name: install dependencies
+      #    command: |
+      #      alias python="python3.4"
       #- save_cache:
       #    paths:
       #      - ./venv
@@ -43,6 +43,7 @@ jobs:
       - run:
           name: run echo
           command: |
+            alias python3="python3.4"
             python --version
             python3 --version
       #- store_artifacts:
